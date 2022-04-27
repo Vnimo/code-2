@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int a[10];
+	int i;
+	int max=-1;
+	for (i = 0; i <= 8; i++)
+	{
+		scanf("%d", &a[i]);
+	}
+	for (i = 0; i <= 8; i++)
+	{
+		max = max > a[i] ? max : a[i];
+	}
+	printf("%d", max);
+	return 0;
+}
